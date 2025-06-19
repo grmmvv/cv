@@ -1,32 +1,108 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>grmmvv.me — скоро</title>
+  <title>Maxim Gribennikov — Resume</title>
   <style>
     body {
-      background: #111;
+      background: #121212;
+      color: #eee;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1, h2 {
       color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: sans-serif;
-      flex-direction: column;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.3em;
+    a {
+      color: #1e90ff;
+      text-decoration: none;
     }
-    p {
-      color: #888;
+    .section {
+      margin-top: 2em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    .contact a {
+      margin-right: 1em;
+    }
+    .job-title {
+      font-weight: bold;
+    }
+    .date {
+      font-style: italic;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <h1>grmmvv.me</h1>
-  <p>Сайт скоро будет доступен</p>
+  <h1>Maxim Gribennikov</h1>
+  <p class="contact">
+    Belgrade, Serbia · +381612752015<br>
+    <a href="mailto:grmmvv@gmail.com">grmmvv@gmail.com</a>
+    <a href="https://linkedin.com/in/grmmvv" target="_blank">LinkedIn</a>
+    <a href="https://github.com/grmmvv" target="_blank">GitHub</a>
+  </p>
+
+  <div class="section">
+    <h2>Summary</h2>
+    <ul>
+      <li>11+ years of QA experience including test strategy, automation frameworks, and team leadership.</li>
+      <li>Achieved ~90% automation coverage, significantly reducing manual QA time.</li>
+      <li>Led QA & DevOps teams, driving process improvements and cross-functional collaboration.</li>
+      <li>Proficient in AI tools to enhance productivity and streamline tasks.</li>
+      <li>Contributed to architecture planning and troubleshooting in production environments.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> Python, TypeScript, Groovy, Bash</p>
+    <p><strong>Frameworks & Tools:</strong> Selenium, pytest, Playwright, Docker, K8S, Jenkins, GitHub Actions, Allure TestOps, Selenoid, Selenium GRID, MOON, ArgoCD, Helm, Mailosaur, Mailpit</p>
+    <p><strong>API Testing:</strong> Swagger, Postman, Locust</p>
+    <p><strong>Cloud:</strong> GCP, Azure, Heroku, OpenAI, GitHub Copilot</p>
+  </div>
+
+  <div class="section">
+    <h2>Work Experience</h2>
+
+    <p class="job-title">Principal Software Quality Engineer, Sphera — Serbia <span class="date">Jan 2024 – Jun 2025</span></p>
+    <ul>
+      <li>Migrated from Selenoid to Kubernetes Selenium Grid.</li>
+      <li>Moved test infra from Jenkins to GitHub Actions with self-hosted K8s runners.</li>
+      <li>Implemented DB migration validation with Alembic.</li>
+      <li>Automated monolith service deployments via GHA/Bash/Python.</li>
+      <li>Maintained internal Slack bot for dev/product automation.</li>
+    </ul>
+
+    <p class="job-title">DevTestOps Lead, SupplyShift — Serbia <span class="date">Apr 2022 – Jan 2024</span></p>
+    <ul>
+      <li>Led migration to Playwright/TypeScript and GCP K8s infra.</li>
+      <li>Implemented CD pipelines and database upgrades.</li>
+      <li>Enabled nightly releases and monolith deployments with GitHub Actions.</li>
+    </ul>
+
+    <p class="job-title">Automation QA Engineer, SupplyShift — Russia <span class="date">Nov 2018 – Apr 2022</span></p>
+    <ul>
+      <li>Built automation from scratch: Python, pytest, Selenium, Allure TestOps.</li>
+      <li>Integrated Jenkins pipelines and test management systems.</li>
+    </ul>
+
+    <p class="job-title">Automation QA Engineer, Unigine — Russia <span class="date">Oct 2014 – Nov 2018</span></p>
+    <ul>
+      <li>Refactored CRM web automation, built in-house tools for testing engine rendering and performance.</li>
+      <li>Introduced Allure reporting, daily automation via Jenkins.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p>Bachelor of Material Science — Karaganda State Technical University, Kazakhstan (2011)</p>
+    <p>Master of Material Science — Tomsk Polytechnic University, Russia (2013)</p>
+  </div>
 </body>
 </html>
